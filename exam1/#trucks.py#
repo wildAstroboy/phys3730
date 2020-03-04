@@ -1,0 +1,7 @@
+#!/usr/plocal/bin/python3
+import numpy as np
+
+d = 90
+mu_v = 30
+sig_v = 6
+

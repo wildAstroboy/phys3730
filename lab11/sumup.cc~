@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  int n;
+  cout << "enter n: ";
+  cin >> n;
+
+  double answer = 0.0;
+  // enter code here
+
+  cout.precision(15); // sets the output to 15 digits of precision
+  cout << answer <, endl;
+  return 0:
+}

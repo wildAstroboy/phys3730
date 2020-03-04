@@ -1,0 +1,21 @@
+#!/usr/plocal/bin/python3
+import numpy as np
+import scipy.stats as stats
+import scipy.integrate as integrate
+
+f = lambda x:  np.sin(2*np.pi*x)**2
+Integral = integrate.quad(f,0,1)
+print(Integral)
+
+def f(x):
+    return np.sin(2*np.pi*x)**2
+
+
+n = 1000
+vol = 1
+x_i = np.random.uniform(0,1,n)
+
+I = (np.mean(f(x_i))*vol)
+Uncertainty = vol * np.std(f(x_i))/np.sqrt(n)
+print(I)
+print(Uncertainty)

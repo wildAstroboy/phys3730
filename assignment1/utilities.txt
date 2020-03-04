@@ -1,0 +1,11 @@
+cd: Changes your working directory.
+ls: Lists items in the directory where you currently are.
+cat: Displays all of the contents of file.
+head: Displays the first 5 lines of content from the file.
+cp: Command to copy file from one location to another.
+rm -f: Command to remove file/directory with out confirmation prompt.
+man: Command to show manual for and usage for another command.
+which: Shows the linked alias for another command.
+ps: Lists all the running processes.
+fg: Bring background job to foreground.
+cal: Displays Calendar for current month.

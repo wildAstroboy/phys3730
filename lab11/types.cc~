@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+  const double pi = acos(-1.0); // since arccos(-1) is pi
+  char c;
+  string s = "Hello, world.";
+  int i;
+  double d;
+
+  cout << s << endl;
+  return 0;
+}

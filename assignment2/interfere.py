@@ -1,0 +1,38 @@
+#!/usr/plocal/bin/python3
+import numpy as np
+import math as m
+import pylab as pl
+
+wavelength = 600e-9                 # wavelength in meters
+d = 0.0005                          # Distance between the slits in m
+D = 1                               # Distance to screen in meters
+L = 0.01                            # Width of the screen in meters
+n = 2                               # Number of holes
+
+# Create a 256,256 square mesh grid
+xs = np.linspace(-0.5*L, 0.5*L, 256)
+ys = np.linspace(-0.5*L, 0.5*L, 256)
+Xs, Ys = np.meshgrid(xs, ys)
+
+# Placement of the hole/s
+x = 0.0004
+y = 0
+r = np.array([x, y, 0])
+
+# Info about position on screen
+R = np.array([Xs, Ys, D])
+R_mag = np.sqrt(Xs**2+Ys**2+D**2)
+R_hat = np.array([Xs/R_mag, Ys/R_mag, D/R_mag])
+dot = np.array([x * (Xs/R_mag) + y * (Ys/R_mag) + 0 * (D/R_mag)])
+
+phi = ((2 * m.pi) * dot) / wavelength
+phi = phi.reshape((256, 256))
+
+# E field and Intesity
+E = (m.e**(1j*phi))
+I = E**2 * np.cos(phi/n)**2
+
+pl.imshow(I.real, cmap='rainbow')
+#pl.savefig('interfere2.png')
+#pl.savefig('interferemy.png')
+pl.show()

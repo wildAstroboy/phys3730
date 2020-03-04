@@ -1,0 +1,7 @@
+#!/usr/plocal/bin/python3
+import np as numpy
+
+
+n = np.random.randint(2, size=5)
+
+print(n)

@@ -1,0 +1,54 @@
+#!/usr/plocal/bin/python3
+import numpy as np
+import pylab  as pl
+from scipy import stats
+from scipy import optimize as opt
+
+n = 11
+m = 3.6e-15
+B = 0.001
+z = np.loadtxt('qmag.dat', usecols=1)
+t = np.loadtxt('qmag.dat', usecols=0)
+zerr = np.loadtxt('qmag.dat', usecols=2)
+sig = 1
+
+
+#Linear fit
+a = stats.linregress(t,z)
+slope = a[0]
+intercept = a[1]
+y_lin = slope*t + intercept
+mparam = 2
+
+#Curved Fit
+def fline(a,b,c,d):
+    return d*a**2+b*a+c
+
+popt, pcov = opt.curve_fit(fline,t,z)
+
+for i in range(mparam):
+    print('a'+str(i)+':',popt[i],'+/-',np.sqrt(pcov[i,i]))
+
+yy = fline(t, *popt)
+
+chi2 = np.sum((y_lin-fline(t,popt[0],popt[1],popt[2]))**2/zerr**2) # Chi-squared
+redchi2 = chi2/(n-mparam)
+print('Chi2: ', chi2)
+print('Red Chi2: ', redchi2)
+print('p-value:' , stats.chi2(n-mparam).sf(chi2))
+
+acc = 2*popt[1]
+qmag = acc*m/B
+print('Qmag: ', qmag)
+
+#Plotting
+fig, ax = pl.subplots(2,1)
+
+ax[0].plot(t,z)
+ax[0].plot(t, y_lin)
+ax[0].errorbar(t,z,zerr,fmt='ok',ecolor='b')
+
+ax[1].plot(t,z)
+ax[1].plot(t, fline(t, popt[0], popt[1], popt[2]), '-m')
+ax[1].errorbar(t,z,zerr,fmt='ok',ecolor='b')
+#pl.show()

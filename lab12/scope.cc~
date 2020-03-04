@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+const double pi = acos(-1.); // uncomment this!
+extern int ctrmax;
+
+
+void setapi(double a, const double b) {
+  // static int ctr;
+  a = pi*b;
+  // ctr ++;
+  return;
+}
+
+int main() 
+{
+  ctrmax=0;
+  
+   int n = 10;
+   for (int i=0; i<n; i++) {
+     double a;
+     setapi(a,double(i));
+     if (a > 2*pi) break;
+   }
+   // cout << "i,a: " << i << " " << a << endl;
+   return 0;
+}
+
+int ctrmax;

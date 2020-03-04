@@ -1,0 +1,4 @@
+#!/usr/plocal/bin/python3
+import math
+
+print(1/2)

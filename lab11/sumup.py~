@@ -1,0 +1,9 @@
+import numpy in np
+
+ans = 0
+n = 100000000
+for i in range(n):
+    sgn = (-1)**i
+    ans += sgn/(i+1)
+
+print("ans:", ans)

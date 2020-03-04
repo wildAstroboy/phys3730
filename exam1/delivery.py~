@@ -1,0 +1,8 @@
+import numpy as np
+
+d = 90
+mu_v = 30
+sig_v = 6
+
+def tavg(x):
+    return d/x

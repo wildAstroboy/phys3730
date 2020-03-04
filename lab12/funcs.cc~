@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+double sum(double a, double b);
+//double sqr(double x);
+template<class T> T sqr(const T x) { return x*x; }
+
+// Program Execution
+int main(){
+  cout << "sum is: " << sum(1, 2) << "\nx squared is: " << sqr(2) << endl;
+   return 0;
+    }
+
+
+// Function Definitions
+double sum(double a, double b){
+  double c = a+b;
+  return c;
+    }
+
+//double sqr(double x){
+//  x = x*x;
+//  return x;
+//}

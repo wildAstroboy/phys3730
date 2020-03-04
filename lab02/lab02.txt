@@ -1,0 +1,100 @@
+    22	9:54	grep termnal mytext.txt
+    23	9:54	grep terminal mytext.txt
+    24	9:54	cat mytext.txt | grep -i hello
+    25	9:56	cp ~p6720/exercises/unix_emacs_II/file.dat .
+    26	9:56	wc file.dat
+    27	9:57	cat file.dat
+    28	9:57	more file.dat
+    29	9:57	less file.dat
+    30	9:58	man l ; head
+    31	9:58	man I ; head
+    32	9:59	head -n file.dat
+    33	9:59	head --list==4 file.dat
+    34	10:00	head --lines=4 file.dat
+    35	10:00	head ( 0 ) file.dat
+    36	10:01	head -n 4 file.dat
+    37	10:02	head -c 4 file.dat
+    38	10:02	tail -c 4 file.dat
+    39	10:02	tail file.dat
+    40	10:04	man tail
+    41	10:04	head file.dat
+    42	10:04	head ( 1 ) file.dat
+    43	10:06	tail ( 1 )
+    44	10:06	tail ( 1 ) file.dat
+    45	10:06	man head
+    46	10:07	head -n 1 file.dat
+    47	10:07	head -n 2 file.dat
+    48	10:09	head[4] file.dat
+    49	10:10	head -n 4 --lines=4 file.dat
+    50	10:11	head -n 4 file.dat | tail -n 1
+    51	10:12	sort mytext.txt
+    52	10:12	sort file.dat
+    53	10:12	sort file.dat | head
+    54	10:13	sort file.dat | tail
+    55	10:13	sort file.dat | more
+    56	10:13	sort -k 2 | head
+    57	10:13	sort -k 2 | tail
+    58	10:14	sort -g -k 2 | head
+    59	10:14	sort -k 2 file.dat | head
+    60	10:15	sort -k 2 file.dat | tail
+    61	10:15	sort -g -k 2 file.dat | head
+    62	10:15	sort -g -k 2 file.dat | tail
+    63	10:16	sort -r file.dat
+    64	10:16	ls -lt mytext.txt | head
+    65	10:17	awk '{print $1*$2}' file.dat
+    66	10:18	awk '{print cos($1+$2)}' file.dat
+    67	10:18	awk '{print log($1+$2)}' file.dat
+    68	10:18	awk '{print exp($1+$2)}' file.dat
+    69	10:18	awk '{print $1=sin($2)}' file.dat
+    70	10:19	awk '{print $1,sin($2)}' file.dat
+    71	10:19	awk '{print sin($1),$2}' file.dat
+    72	10:20	echo awk file.dat
+    73	10:20	echo awk
+    74	10:20	echo awk $1
+    75	10:21	echo awk '{print $1*$2}' file.dat
+    76	10:21	echo awk {print $1*$2} file.dat
+    77	10:21	echo 3 2 | awk '{print $1*$2}'
+    78	10:22	sed -s 's/world/everybody/' mytext.txt
+    79	10:23	printenv
+    80	10:23	grep SHELL | printenv
+    81	10:23	printenv | grep SHELL
+    82	10:24	printenv | grep TERM
+    84	10:24	ls -a
+    85	10:25	ls -a *login**cshrc*
+    86	10:25	ls -a *login* *cshrc*
+    87	10:25	ls -a *login*
+    88	10:26	alias dog cat
+    90	10:26	alias
+    91	10:26	which dog
+    92	10:27	emacs
+    93	10:28	bg
+    94	10:28	kill %1
+    95	10:29	kill %
+    96	10:29	kill %13
+    97	10:29	kill all
+    98	10:30	jobs
+    99	10:30	killall
+   100	10:30	killall -u u0580211
+   101	10:31	history
+   102	10:31	emacs &
+   103	10:31	ps
+   104	10:32	kill %371292
+   105	10:32	kill 371292
+   106	10:32	ps aux
+   107	10:32	ps aux | grep u0580211
+   108	10:33	cd
+   110	10:33	cd exercises/
+   112	10:33	cd lab0
+   113	10:33	cd lab02
+   119	10:34	ls -lt mytext.txt
+   121	10:35	chmod u-r mytext.txt
+   122	10:35	ls -l mytext.txt
+   125	10:35	chmod u-rw mytext.txt
+   127	10:36	chmod o+w mytext.txt
+   128	10:36	chmod o-w mytext.txt
+   131	10:36	chmod u+r mytext.txt
+   132	10:36	chmod u+w mytext.txt
+   133	10:36	cat mytext.txt
+   134	10:36	emacs mytext.txt
+   135	10:37	ls
+   136	10:37	history > lab02.txt
