@@ -14,6 +14,7 @@ class particle {
 		}
 		void kick (const double dt, const double k){
 			v += dt*(-k/m*x);
+			v -= 0.1*dt*v;
 		}
 		double energy(const double k) {
 			return 0.5*m*v*v + 0.5*k*x*x;
@@ -37,7 +38,7 @@ int main() {
 	double dt = T/100;
 	double t = 0.0;
 	
-	while(t <= T) {
+	while(t <= 10*T) {
 		if(true) {
 			p.drift(0.5*dt);
 			p.kick(dt,k);
@@ -49,7 +50,7 @@ int main() {
 		}
 		
 		t = t + dt;
-		cout << t << p.x << "   " << p.energy(k) << endl;
+		cout << t << "   " << p.x << "   " << p.v << "   " << p.energy(k) << endl;
 	}
 	
 	cout << "# final x,v: " << p.x << "   " << p.v << endl;
