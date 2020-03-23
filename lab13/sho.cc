@@ -20,24 +20,24 @@ class particle {
 			return 0.5*m*v*v + 0.5*k*x*x;
 		}
 };
-	
+
 int main() {
-	
+
 	particle p;
 	p.x = 1.0;
 	p.v = 0.0;
 	p.m = 1.0;
-	
+
 	double k = 1.0;
 	double T = 2*pi*sqrt(p.m/k);
-	
+
 	cout << "# period T is: " << T << endl;
 	cout << "# starting x,v: " << p.x << "   " << p.v << endl;
 	cout << " Starting energy: " << p.energy(k) << endl;
-	
+
 	double dt = T/100;
 	double t = 0.0;
-	
+
 	while(t <= 10*T) {
 		if(true) {
 			p.drift(0.5*dt);
@@ -48,14 +48,14 @@ int main() {
 			p.x += dt*p.v;
 			p.v += dt*a;
 		}
-		
+
 		t = t + dt;
 		cout << t << "   " << p.x << "   " << p.v << "   " << p.energy(k) << endl;
 	}
-	
+
 	cout << "# final x,v: " << p.x << "   " << p.v << endl;
 	cout << " final energy: " << p.energy(k) << endl;
-	
+
 	return 0;
 
 }
@@ -71,7 +71,7 @@ x_i+1 = x_i + del(t)*v_i
 
 v_i+1 = v_i + del(t)*a_i where a_i = -(k/m)x_i
 
-if we know velocity inbetween an interval: 
+if we know velocity inbetween an interval:
 
 x_i+1 = x_i + del(t)*v_i+(1/2)
 
