@@ -32,8 +32,8 @@ class particle
   {
     double fx = -K * qelec*qelec/(melec*x*x);
     double fy = -K * qelec*qelec/(melec*y*y);
-    double ax = fx;
-    double ay = fy;
+    double ax = fx * x/r + (-2*K*(qelec*qelec)*(fx*fx)/(3*melec*v*c3)) * vx/v;
+    double ay = fy * y/r + (-2*K*(qelec*qelec)*(fy*fy)/(3*melec*v*c3)) * vy/v;
     vx += dt*ax;
     vy += dt*ay;
     v = sqrt(vx*vx + vy*vy);
@@ -58,20 +58,17 @@ int main()
   double t = 0.0;
   double t_half = 0.0;
 
-  cout  << "Starting r, v, Energy: " << p.r << ", " << p.v << ", " << p.energy(K) << endl;
+  cout  << "Starting r: " << p.r << ", v: " << p.v << ", Energy: " << p.energy(K) << endl;
   while (t < tmax) {
-    if (p.r >= 0.5*RBohr){
-      p.drift(0.5*dt);
-      p.kick(dt,K);
-      p.drift(0.5*dt);
-      t += dt;
+    if (p.r >= 0.5*RBohr) {
+    p.drift(0.5*dt);
+    p.kick(dt,K);
+    p.drift(0.5*dt);
+    t += dt;
+    cout << "r: " << p.r << ", " << "v: " << p.v << ", Energy: " << p.energy(K) << endl;
     }
     t_half = t;
-    cout << "r: " << p.r << ", " << "v: " << p.v << ", Energy: " << p.energy(K) << endl;
     break;
   }
   cout  << "Ending r: " << p.r << ", t_half: " << t_half << ", Energy: " << p.energy(K) << endl;
 }
-/* Im having an issue where it uses a number larger than my RBohr number in the while loop which i dont understand.
-
-*/
