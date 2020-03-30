@@ -1,0 +1,8 @@
+L := 1; 		#meter
+g := 9.81;	 	#meters/sec^2
+theta := 0;		#Radians
+theta_0 := 45*Pi/180;	#Radians
+
+integral := int(1/sqrt(cos(x)-cos(theta_0)), x=theta..theta_0);
+P_exact := evalf(4*sqrt(L/(2*g))*integral);
+P_estimate := 2*Pi*sqrt(L/g);

@@ -1,0 +1,93 @@
+{VERSION 5 0 "SUN SPARC SOLARIS" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "" -1 23 "Courier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 
+0 1 }{CSTYLE "" -1 256 "courier" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 257 "courier" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 258 "times" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 259 "
+" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 "" 1 14 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 262 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE 
+"" -1 263 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 1 
+14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 1 14 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 }{CSTYLE "" -1 267 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 268 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "courier
+" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 1 14 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 271 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 272 "courier" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 273 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+274 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 275 "" 1 14 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 "" 1 14 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading
+ 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 
+0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 1 14 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "
+" 0 257 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 1 
+14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {SECT 0 {PARA 3 "" 0 "" {TEXT -1 30 "Elementary calculus with \+
+Maple" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 3 "" 0 "" 
+{TEXT -1 25 "Derivatives and functions" }}{PARA 256 "" 0 "" {TEXT -1 
+12 "The command " }{TEXT 256 0 "" }{TEXT 257 4 "diff" }{TEXT 258 22 " \+
+does differentiation:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 15 "diff(cos(x),x);" }}}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 259 49 "Repeating the variable g
+ives a second derivative:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "diff(cos(x),x,x);" }}}{PARA 0 "" 0 
+"" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 260 88 "Maple knows a wide va
+riety of standard functions.  The names are generally self-evident." }
+}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 20 "diff(log(sin(x)),x);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+257 "" 0 "" {TEXT -1 87 "You can define your own functions.  A primiti
+ve way is to give a name to an expression:" }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "r := sqrt(x^2 + y^
+2 + z^2);" }{TEXT -1 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }{TEXT 261 45 "A more powerful way is to define a
+ procedure:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 40 "V := (x,y,z) -> 1/sqrt(x^2 + y^2 + z^2);" }{TEXT 
+-1 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 
+"" }{TEXT 262 67 "You can compute a partial derivative of this functio
+n, for example:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 17 "diff(V(x,y,z),x);" }}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT 263 30 "and mixed parti
+al derivatives:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 19 "diff(V(x,y,z),x,y);" }}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 11 "Integration" }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }{TEXT 264 32 "Maple does indefinite integrals
+:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 18 "int(x^3*cos(x),x);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" 
+}}{PARA 0 "" 0 "" {TEXT 265 23 "and definite integrals:" }}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "int(sin
+(t)/t,t=0..x);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 3 "
+" 0 "" {TEXT -1 13 "Taylor Series" }}{PARA 0 "" 0 "" {TEXT 266 53 "By \+
+default Taylor series are evaluated up to order 6:" }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "taylor(Si(x)
+,x);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT 267 0 "" }}{PARA 0 "" 0 
+"" {TEXT -1 0 "" }{TEXT 268 41 "but by changing the preassigned value \+
+of " }{TEXT 269 5 "Order" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "Order := 10;" }}}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 22 "you can get more terms" }
+}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 16 "taylor(Si(x),x);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }{TEXT 270 46 "Here is how to expand about a differ
+ent point:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 20 "taylor(sin(x),x=Pi);" }}}{PARA 0 "" 0 "" {TEXT -1 
+0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT 271 11 "(Note that " }
+{TEXT 272 3 "Pi " }{TEXT 273 23 "is a special variable.)" }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 6 "Limits" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT 274 31 "Maple can find limiting v
+alues:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 36 "f := (x,h) -> (sin(x+h) - sin(x))/h;" }}}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "limit(f
+(x,h),h=0);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }{TEXT 275 50 "The error function, known to Maple, is defined \+
+as " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 258 "" 0 "" {TEXT 23 44 "
+erf(x) = 2/sqrt(Pi) * int(exp(-t^2), t=0..x)" }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "evalf(erf(1));" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "evalf(erf(2));" }}}{PARA 0 
+"" 0 "" {TEXT -1 0 "" }{TEXT 276 61 "So we can evaluate the infinite i
+ntegral by taking the limit:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+25 "limit(erf(x),x=infinity);" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}}
+{MARK "1 3 0 0" 15 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 
+1 2 33 1 1 }
