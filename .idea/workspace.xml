@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8812f271-022c-4eb8-9124-e3c1cbf9973a" name="Default Changelist" comment="" />
+    <list default="true" id="8812f271-022c-4eb8-9124-e3c1cbf9973a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +21,34 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="airy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="phys3730" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PyCharm Projects/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../airy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.airy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -31,5 +61,27 @@
       <updated>1584578970523</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2120" y="-8" key="#airy" timestamp="1585334870664">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="2120" y="-8" key="#airy/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585334870664" />
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom" timestamp="1585334932393">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585334932393" />
+    <state width="1899" height="290" key="GridCell.Tab.0.center" timestamp="1585334932392">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1899" height="290" key="GridCell.Tab.0.center/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585334932392" />
+    <state width="1899" height="290" key="GridCell.Tab.0.left" timestamp="1585334932392">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1899" height="290" key="GridCell.Tab.0.left/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585334932392" />
+    <state width="1899" height="290" key="GridCell.Tab.0.right" timestamp="1585334932392">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1899" height="290" key="GridCell.Tab.0.right/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585334932392" />
   </component>
 </project>

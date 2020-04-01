@@ -3,5 +3,6 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "complex": "cpp"
-    }
+    },
+    "python.pythonPath": "/anaconda3/bin/python"
 }
