@@ -31,8 +31,3 @@ pl.ylabel('value (a.u.)')
 imfil = 'tmp.png'
 pl.savefig(imfil)
 
-# could stop here,
-import os
-os.system('convert '+imfil+' ~/www/tmp.jpg')
-
-
