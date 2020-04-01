@@ -1,0 +1,13 @@
+k := 1.38*10^(-23);
+T := 300;
+m := 4.81*10^(-26);
+f:= 4*Pi*(m/(2*Pi*k*T))^(3/2);
+fexp:=(v^2*exp((-m*v)/(2*k*T)));
+simplify(f*evalf(int(fexp,v=0..infinity)));
+fdiff := simplify(diff(f*fexp,v));
+vp := solve(fdiff,v);
+cs := sqrt(7/5*k*T/m);
+f:= 4*Pi*(m/(2*Pi*k*T))^(3/2);
+fexp:=(v^2*exp((-m*v)/(2*k*T)));
+simplify(f*evalf(int(fexp,v=0..cs)));
+cs := sqrt(7/5*k*T/m);

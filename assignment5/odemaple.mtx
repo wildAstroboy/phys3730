@@ -1,0 +1,7 @@
+v0 := 20;
+g := -9.8;
+C := 0.5;
+ODE := {diff(y(t),t,t)= g - C*diff(y(t),t), y(0)=0, D(y)(0)=v0};
+sol := dsolve(ODE,y(t),type=numeric);
+sol(.75);
+quit;
