@@ -1,3 +1,4 @@
+#!/usr/plocal/bin/python3
 import numpy as np
 from scipy.integrate import odeint
 from scipy.interpolate import interp1d
@@ -27,7 +28,7 @@ pl.plot(t,sol[:,0],'-k')
 pl.xlabel('time (s)')
 pl.ylabel('value (a.u.)')
 
-imfil = 'tmp.png'er
+imfil = 'tmp.png'
 pl.savefig(imfil)
 
 # could stop here,
