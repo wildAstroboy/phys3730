@@ -36,7 +36,7 @@ def init():
 
 def animate(i): # all we do here is set up pltorb w/data, pass it to the animatoe
     x,y = np.cos(i),np.sin(i)*np.cos(i)
-    x2,y2 = -np.cos(i),-np.sin(i)*np.cos(i)
+    x2,y2 = -np.cos(i),-np.sin(i)*np.cos(i)#
     x3,y3 = np.cos(i)*np.sin(i),np.sin(i)
     x4,y4 = -np.cos(i)*np.sin(i),-np.sin(i)
 
@@ -69,5 +69,5 @@ myanim = animation.FuncAnimation(fig, animate, init_func=init, frames=frms, blit
 # in this funcion, animate(frms[i]) is called for i=0,1,...nfrms-1.
 
 # could do plt.show()
-plt.show()
-#myanim.save(ofil, writer='imagemagick', fps=30)
+#plt.show()
+myanim.save(ofil, writer='imagemagick', fps=30)
