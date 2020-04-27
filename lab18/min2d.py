@@ -60,7 +60,7 @@ plotfunc(func_ugh,L) # Plotting Function 2
 #pl.savefig(ofil)
 
 
-#pl.show() # uncomment if in X windows/remote desktop.
+pl.show() # uncomment if in X windows/remote desktop.
 
 #print('dumping image file to tmp dir...')
 

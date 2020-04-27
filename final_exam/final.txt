@@ -1,0 +1,61 @@
+1.)
+a) Numpy sort function
+
+b) matplotlib.pyplot plot function. plt.plot(x,y)
+
+c) Monte Carlo Integration but I think I would just use scipy integrate function. However we dont have bounds so maybe integrate from 0 to x?
+
+d) I would use scipy.stats.linregress()
+
+e) LaTEX!
+
+
+2.) -1.234e(-56)
+
+
+3.)
+
+i)
+A = [99,1,2,3]
+B =[0,99,2,3]
+
+ii)
+Array B is equal to Array A
+Then set the second element in B equal to 99
+Then set the first element in A equal to 99
+
+iii)
+C = 2 * np.array(A)
+
+
+4.)
+
+int cube(double x) {
+  int z = x*x*x;
+  return z;
+}
+
+int main() {
+  cout << cube(3) << endl;
+}
+
+
+5.)
+import numpy as np
+import scipy.integrate as integrate
+
+
+def f(x):
+  return lambda x: np.sin(x)**8
+
+x = 0
+integral = integrate.quad(f(x), 0, 2*np.pi)
+
+print(integral)
+
+
+6.)
+\begin{equation}
+% your answer here
+I = \int_0^{2\pi} sin^8(x)dx
+\end{equation}
