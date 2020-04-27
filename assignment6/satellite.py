@@ -56,15 +56,27 @@ def closest(xs,ys,xe,ye,t):
     dr = np.sqrt(dx*dx+dy*dy)
     return dr.min() # just return the min of the array! need good sampling!!
 
-a0 = np.array([10, 50])
+a0 = [10,10]
 def optfun(a):
   dvx, dvy = a
-  retval = opt.minimize(gravaccel,[p0,t], method='Nelder-Mead')
-  return retval
+  p1 = np.array([xs0,ys0,xe0,ye0,vxs0 + dvx,vys0 + dvy,vxe0,vye0])
+  sol = odeint(gravaccel,p1,t)
+  xs,ys,xe,ye,vxs,vys,vxe,vye = sol.T
+  rc = closest(xs,ys,xe,ye,t)
+  if rc>1:
+    rc = rc**3
+  w = 0.01
+  ke = 0.5*(dvx**2 + dvy**2)
+  retval = rc + w*ke
+  opti = opt.minimize(retval,a,method='Nelder-Mead',tol=1e-4)
+  return opti.x
+
+# Could not get this optimization to work....
+
 
 print('Optimization is:', optfun(a0))
 
-print('closest approach (Earth radii):',closest(xs,ys,xe,ye,t)/Rearth)
+#print('closest approach (Earth radii):',closest(xs,ys,xe,ye,t)/Rearth)
 
 # if you want to plot this...
 pl.plot(xs0,ys0,'ob',xe0,ye0,'ok') # startin points plotted as circles
